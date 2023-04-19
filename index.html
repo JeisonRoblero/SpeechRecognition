@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/Microfono.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <a class="logo" href="#inicio"><img src="images/Microfono2.png" alt="Logo" width="30px" style="vertical-align:middle;"> 
+            <div class="Iam">
+
+                <p>SP</p>
+                <b>
+                  <div class="innerIam">
+                    Reconocimiento de voz<br /> 
+                    Speech Recognition<br />
+                    Voz a texto<br />
+                    Speech to text<br />
+                    By Jeison Roblero
+                    </div>
+                </b>
+                
+            </div>
+        </a>
+
+        <ul class="enlaces">
+            <li><a data-page="inicio" href="#inicio">Inicio</a></li>
+            <li><a data-page="productos" href="#productos">Dispositivos</a></li>
+            <li><a data-page="categorias" href="#categorias">Acerca</a></li>
+            <li><a data-page="contacto" href="#contacto">Contacto</a></li>
+            <div class="activo"></div>
+        </ul>
+
+        <div class="menu">
+            <div class="linea1"></div>
+            <div class="linea2"></div>
+            <div class="linea3"></div>
+        </div>
+    </header>
+
+    <main>
+        <p class="instrucciones">Instrucciones: Toca el botón "hablar" para empezar.</p>     
+        <section data-index="0" class="inicio" id="inicio">
+            <button class="hablar">HABLAR <img src="images/Microfono2.png" alt="Microfono" width="35px" style="vertical-align: middle;"></button>
+            <h3 class="contenido"></h3>
+            <h3 class="respuesta"></h3>   
+        </section>
+
+        <div style="height: 100px; overflow: hidden; position:absolute; width:100%; top: 95vh;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C136.29,-72.53 222.06,150.48 509.31,4.45 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #008598;">
+                </path>
+            </svg>
+        </div>
+
+        <section data-index="1" class="productos" id="productos">
+            <h2>Dispositivos Compatibles</h2>
+            <div class="contenedor">
+                <a href="https://developer.amazon.com/es-ES/alexa" target="_blank">
+                    <figure>
+                        <img src="images/alexa.jpg" alt="Alexa">
+                        <div class="capa">
+                            <h3>Alexa</h3>
+                            <p>Alexa es el asistente virtual controlado por voz creado por Amazon, y lanzado en noviembre de 2014 junto a su línea de altavoces inteligentes</p> 
+                        </div>
+                    </figure>
+                    <h3>Alexa</h3>
+                </a>
+
+                <a href="https://assistant.google.com/" target="_blank">
+                    <figure>
+                        <img src="images/googlehome.jpg" alt="Google">
+                        <div class="capa">
+                            <h3>Google Home Mini</h3>
+                            <p>Se trata de un altavoz inteligente que sirve como estación central para el Asistente de Google, o Google Assistant. </p> 
+                        </div>
+                    </figure>
+                    <h3>Google Home Mini</h3>
+                </a>
+
+                <a href="https://www.apple.com/es/siri/" target="_blank">
+                    <figure>
+                        <img src="images/siri.jpg" alt="Siri">
+                        <div class="capa">
+                            <h3>Siri</h3>
+                            <p>Siri es una inteligencia artificial con funciones de asistente personal a veces con su propia personalidad para iOS, macOS, tvOS y watchOS. </p> 
+                        </div>
+                    </figure>
+                    <h3>Siri</h3>
+                </a>
+            </div>
+            
+        </section>
+
+        <section data-index="2" class="categorias" id="categorias">
+            <h2>Acerca de</h2>
+            <p>El reconocimiento de voz es la capacidad de una máquina o programa para identificar palabras y frases en lenguaje hablado y convertirlas a un formato legible por máquina.
+
+                El software de reconocimiento de voz rudimentario tiene un vocabulario limitado de palabras y frases, y solo puede identificarlas si se hablan con mucha claridad. Un software más sofisticado tiene la capacidad de aceptar el habla natural.</p>
+        </section>
+
+        <section data-index="3" class="contacto" id="contacto">
+            <h2>Contacto</h2>
+             <!-- formulario de contacto en html y css -->  
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+
+        </section>
+ 
+        <script>
+            let buttons = document.querySelectorAll('header ul li a');
+            buttons.forEach((button) => {
+              button.addEventListener('click', (e) => {
+                e.preventDefault();
+                let target = e.currentTarget.getAttribute('href');
+                
+                document.querySelector(target).scrollIntoView({
+                  behavior: 'smooth'
+                });
+              });
+            });
+        </script>
+    </main>
+
+    <footer>
+        <ul>
+            <li>© copyright Jeison</li>
+        </ul>
+    </footer>
+    <script src="js/app.js"></script> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
